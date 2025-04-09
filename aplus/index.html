@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>APLUS</title>
+<link href="favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<link href="./css/fullpage.min.css" rel="stylesheet" type="text/css">
+<link href="./css/style.css" rel="stylesheet" type="text/css"/>
+</link></head>
+<body>
+<div class="lang-selector" style="position: fixed; top: 20px; right: 20px; z-index: 9999;">
+<select id="languageSwitcher" onchange="switchLanguage(this.value)">
+<option selected="" value="zh">中文</option>
+<option value="en">English</option>
+<option value="vi">Tiếng Việt</option>
+<option value="th">ไทย</option>
+</select>
+</div>
+
+<div id="fullpage">
+<div class="section sect-01">
+<img alt="" class="kv-01" src="./img/s-01-main.png"/>
+<img alt="" class="kv-02" src="./img/s-02-main.png"/>
+<div class="intro fade-in">
+<img alt="" class="logo" src="./img/logo.png"/>
+<h1>APLUS 专业综合包网方案</h1>
+<p>打造全方位营运平台，提供最低门槛、最丰富的游戏资源，助您抢占市场高地。</p>
+</div>
+</div>
+<div class="section sect-02">
+<h1>战略联盟阵容</h1>
+<p>携手全球一线游戏供应商，提供稳定高效的串接支持与技术服务。</p>
+<div class="gplist fade-in">
+<div class="hover-zoom"><img alt="" src="./img/gplogo/mg.png"/></div>
+<div class="hover-zoom"><img alt="" src="./img/gplogo/bbin.png"/></div>
+<div class="hover-zoom"><img alt="" src="./img/gplogo/pt.png"/></div>
+<div class="hover-zoom"><img alt="" src="./img/gplogo/rt.png"/></div>
+<div class="hover-zoom"><img alt="" src="./img/gplogo/pg.png"/></div>
+<div class="hover-zoom"><img alt="" src="./img/gplogo/jdb.png"/></div>
+<div class="hover-zoom"><img alt="" src="./img/gplogo/cq9.png"/></div>
+<div class="hover-zoom"><img alt="" src="./img/gplogo/tp.png"/></div>
+<div class="hover-zoom"><img alt="" src="./img/gplogo/png.png"/></div>
+<div class="hover-zoom"><img alt="" src="./img/gplogo/fc.png"/></div>
+</div>
+<!-- <div class="slide"><h1>Slide 2.2</h1></div>
+        <div class="slide"><h1>Slide 2.3</h1></div> -->
+</div>
+<div class="section sect-03">
+<div class="des">
+<h1>产品展示</h1>
+<p>精美新颖的UI主题，流畅丝滑的交互操作，强大稳定的服后台务，全方位打造绝佳游戏体验。</p>
+</div>
+<div class="screen"><img alt="" src="./img/screen.png"/></div>
+</div>
+</div>
+<!-- fullPage.js JS -->
+<script src="./js/fullpage.min.js" type="text/javascript"></script>
+<script src="./js/script.js" type="text/javascript"></script>
+
+<script>
+  const translations = {
+    zh: {
+      title: "APLUS 专业综合包网方案",
+      subtitle: "打造全方位营运平台，提供最低门槛、最丰富的游戏资源，助您抢占市场高地。",
+      alliance: "战略联盟阵容",
+      allianceDesc: "携手全球一线游戏供应商，提供稳定高效的串接支持与技术服务。",
+      demo: "产品展示",
+      demoDesc: "精美新颖的UI主题，流畅丝滑的交互操作，强大稳定的服后台务，全方位打造绝佳游戏体验。"
+    },
+    en: {
+      title: "APLUS Professional Aggregation Solutions",
+      subtitle: "Build an all-in-one operation platform with the lowest entry threshold and richest game resources to lead the market.",
+      alliance: "Strategic Alliances",
+      allianceDesc: "Partnering with top global game providers to deliver stable integration and technical support.",
+      demo: "Showcase",
+      demoDesc: "Diversified entertainment content integration including live casino, lottery, e-sports, sports, and popular games to meet all market demands."
+    },
+    vi: {
+      title: "Giải pháp tổng hợp chuyên nghiệp APLUS",
+      subtitle: "Xây dựng nền tảng vận hành toàn diện với ngưỡng gia nhập thấp nhất và tài nguyên trò chơi phong phú nhất để dẫn đầu thị trường.",
+      alliance: "Liên minh chiến lược",
+      allianceDesc: "Hợp tác với các nhà cung cấp trò chơi hàng đầu thế giới để cung cấp tích hợp ổn định và hỗ trợ kỹ thuật.",
+      demo: "Thử nghiệm",
+      demoDesc: "Tích hợp nội dung giải trí đa dạng bao gồm sòng bạc trực tuyến, xổ số, thể thao điện tử, thể thao và trò chơi phổ biến đáp ứng mọi nhu cầu thị trường."
+    },
+    th: {
+      title: "APLUS โซลูชั่นระบบครบวงจรแบบมืออาชีพ",
+      subtitle: "สร้างแพลตฟอร์มการดำเนินงานครบวงจร ด้วยเกณฑ์เริ่มต้นต่ำและแหล่งเกมที่หลากหลายเพื่อครองตลาด",
+      alliance: "พันธมิตรเชิงกลยุทธ์",
+      allianceDesc: "ร่วมมือกับผู้ให้บริการเกมชั้นนำของโลกเพื่อมอบการเชื่อมต่อที่เสถียรและบริการทางเทคนิค",
+      demo: "แสดงสินค้า",
+      demoDesc: "รวมเนื้อหาความบันเทิงที่หลากหลาย ครอบคลุมคาสิโนสด ลอตเตอรี่ อีสปอร์ต กีฬา และเกมยอดนิยม เพื่อตอบสนองทุกความต้องการของตลาด"
+    }
+  };
+
+  function switchLanguage(lang) {
+    const t = translations[lang];
+    if (!t) return;
+
+    document.querySelector(".intro h1").innerText = t.title;
+    document.querySelector(".intro p").innerText = t.subtitle;
+    document.querySelector(".sect-02 h1").innerText = t.alliance;
+    document.querySelector(".sect-02 p").innerText = t.allianceDesc;
+    document.querySelector(".sect-03 h1").innerText = t.demo;
+    document.querySelector(".sect-03 p").innerText = t.demoDesc;
+  }
+</script>
+</body>
+</html>

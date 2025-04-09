@@ -1,0 +1,264 @@
+.fp-watermark {
+    display: none;
+}
+.logo {
+  display: block;
+  margin: 10px auto;
+  max-height: 200px;
+}
+h1 {
+    font-size: 6em;
+    font-size: calc(2em + 2vw);
+    font-family: arial, helvetica;
+    margin: 0;
+  }
+  
+  .intro p {
+    margin: 0.5em auto;
+    font-size: 1.65em;
+  }
+  
+  .section {
+    font-family: arial, helvetica;
+    color: #fff;
+    text-align: center;
+  }
+  
+  /* Backgrounds colors for sections */
+  .fp-section {
+    overflow: hidden;
+    position: relative;
+  }
+  .fp-section.sect-01 {
+    background-image: linear-gradient(128deg, #ff9a3f, #ff4b40);
+
+  }
+  .fp-section.sect-01 .intro {
+    position: relative;
+  }
+  .fp-section.sect-01 .kv-01,
+  .fp-section.sect-01 .kv-02{
+    position: absolute;
+    top: 10%;
+    height: 100vh;
+  }
+  .fp-section.sect-01 .kv-01 {
+    left: -10px;
+  }
+  .fp-section.sect-01 .kv-02 {
+    right: -10px;
+  }
+  @media (max-width: 768px) {
+    .fp-section.sect-01 .kv-01,
+    .fp-section.sect-01 .kv-02{
+        height: auto;
+        width: 60vw;
+    }
+    .fp-section.sect-01 .kv-01 {
+        left: -20px;
+        top: 10px;
+    }
+    .fp-section.sect-01 .kv-02 {
+        right: -20px;
+        top: initial;
+        bottom: 10px;
+    }
+  }
+
+  .fp-section .gplist {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    position: relative;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .fp-section .gplist > div {
+    position: relative;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  .fp-section .gplist > div > img{
+    max-width: 100%;
+    max-height: 13vh;
+    display: block;
+  }
+  @media (max-width: 768px) {
+    .fp-section .gplist > div > img{
+        max-height: 50px;
+      }
+  }
+
+  .fp-section.sect-03 .des {
+    position: relative;
+    z-index: 1;
+    width: 60%;
+    left: 40%;
+  }
+
+  .fp-section.sect-03 .screen {
+    position: absolute;
+    width: 100vw;
+    height: 100dvh;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+  }
+  .fp-section.sect-03 .screen img {
+    display: block;
+    margin: 0 0 0 10%;
+    max-height: 130vh;
+  }
+  @media (max-width: 768px) {
+    .fp-section.sect-03 .des {
+        position: absolute;
+        top: 0;
+        height: 20dvh;
+        width: 90%;
+        left: 5%;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+    .fp-section.sect-03 .screen {
+        height: 80dvh;
+        top: 20dvh;
+    }
+    .fp-section.sect-03 .screen img {
+        margin: 0 auto;
+        width: 100%;
+        max-height: inherit;
+    }
+  }
+  
+  .fp-section:nth-child(2) {
+    background-image: linear-gradient(128deg, #40afff, #3f61ff);
+
+  }
+  
+  .fp-section:nth-child(3) {
+    background-image: linear-gradient(128deg, #fc40ff, #543fff);
+  }
+  
+  .fp-section:nth-child(4) {
+    background-image: linear-gradient(128deg, #40fff2, #3fbcff);
+  }
+  
+  /* Overwriting styles for the navigation dots */
+  #fp-nav ul li a span,
+  .fp-slidesNav ul li a span {
+    background: white;
+  }
+  
+/* === Animation Effects === */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hover-zoom {
+  transition: transform 0.3s ease;
+}
+
+.hover-zoom:hover {
+  transform: scale(1.05);
+}
+
+.typing {
+  border-right: 2px solid #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 3s steps(30, end), blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+/* === RWD Text Adjustments === */
+@media (max-width: 768px) {
+  .intro h1,
+  .sect-02 h1,
+  .sect-03 h1,
+  .lang-title-3 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .intro p,
+  .sect-02 p,
+  .sect-03 p,
+  .lang-desc-3 {
+    font-size: 1rem;
+    line-height: 1.6;
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+  .lang-selector {
+    top: 10px !important;
+    right: 10px !important;
+    font-size: 0.9rem;
+  }
+
+  .gplist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .gplist div {
+    flex: 0 0 30%;
+    max-width: 80px;
+  }
+
+  .gplist img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* === Styled Language Dropdown === */
+.lang-selector select {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #ffffffee;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: all 0.2s ease;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"><polygon points="0,0 12,0 6,6" fill="%23666"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 10px;
+  padding-right: 30px;
+}
+
+.lang-selector select:hover {
+  border-color: #999;
+  background-color: #f9f9f9;
+}
